@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    font-family: Arial;
+    background-color: #eeeeee;
+
+}
+
+h1{
+    color:blue;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap:2px;
+    justify-content: center;
+    margin:20px;
+
+}
+.cell{
+    width:30px;
+    height:30px;
+    background-color: white;
+    border: 1px gray;
+}
+.filled{
+    background-color:blue;
+}
+#pieces{
+    display:flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
+}
+.piece{
+    display:grid;
+    grid-template-columns: repeat(3, 18px);
+    gap:2px;
+    padding:5px;
+    background-color: white;
+    border: 1px gray;
+    cursor:pointer;
+}
+.small{
+    width:18px;
+    height:18px;
+}
+.active{
+    background-color:blue;
+}
+.selected{
+    border:2px red;
+}
+button{
+    background-color: blue;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
